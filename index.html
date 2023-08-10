@@ -52,7 +52,7 @@
 
       #countdown > div {
         margin: 0 15px;
-        background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+        background: rgba(255, 255, 255, 0.1);
         padding: 15px 20px;
         border-radius: 5px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@
         display: block;
         margin-bottom: 8px;
         position: relative;
-        z-index: 1; /* Ensure text is above pseudo-elements */
+        z-index: 1; 
       }
 
       #countdown > div:not(:last-child) {
@@ -75,7 +75,6 @@
         margin-left: 20px;
       }
 
-      /* Adding some pseudo-elements for extra flair */
       #countdown > div:before,
       #countdown > div:after {
         content: "";
@@ -84,7 +83,7 @@
         left: -50%;
         width: 200%;
         height: 200%;
-        z-index: 0; /* Ensure pseudo-elements are below text */
+        z-index: 0; 
         background: rgba(255, 255, 255, 0.15);
         transform: rotate(45deg);
         pointer-events: none;
@@ -115,8 +114,8 @@
 
       .timeline {
         display: flex;
-        flex-wrap: wrap; /* Cho phép các mục con xuống hàng */
-        justify-content: flex-start; /* Điều chỉnh việc căn lề của các mục con */
+        flex-wrap: wrap; 
+        justify-content: flex-start; 
         align-items: center;
         position: relative;
         padding: 20px;
@@ -141,8 +140,8 @@
         position: relative;
         text-align: center;
         color: white;
-        margin-right: 10px; /* Thêm khoảng cách giữa các cột mốc */
-        margin-bottom: 10px; /* Thêm khoảng cách khi cột mốc xuống hàng */
+        margin-right: 10px; 
+        margin-bottom: 10px;
       }
       .name {
         display: flex;
@@ -198,7 +197,6 @@
             alt=""
           />
         </span>
-        <!-- Các cột mốc sẽ được thêm vào đây bằng JavaScript -->
       </div>
       <div class="timeline">
         <span class="name"
@@ -208,7 +206,6 @@
             alt=""
           />
         </span>
-        <!-- Các cột mốc sẽ được thêm vào đây bằng JavaScript -->
       </div>
     </div>
     <script src="script.js"></script>
@@ -248,8 +245,6 @@
           }
         });
       });
-
-      // ... mã ban đầu ...
 
       function updateCountdown() {
         const now = new Date();
